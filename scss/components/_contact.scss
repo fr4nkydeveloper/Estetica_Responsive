@@ -1,0 +1,48 @@
+.contact{
+	@include desde($large){
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.contact-data{
+	
+	.contact-address,
+	.contact-phone{
+		font-size: .85em;
+		opacity: .8;
+		color:$color2;
+		&:before{
+			margin-right: .3em;
+		}
+	}
+
+	@include desde($large){
+		flex: 0 0 48%;
+	}
+
+
+}
+
+.contact-form-container{
+
+	input,textarea{
+		width: 100%;
+		line-height: 1.7;
+		border:1px solid rgba($black,.25);
+		margin-bottom: .8em;
+	}
+	label{
+		font-size: .8em;
+		opacity: .6;
+	}
+	[type="submit"]{
+		text-transform: uppercase;
+		margin:0;
+		line-height: 3;
+		width: auto;
+	}
+	@include desde($large){
+		flex: 0 0 48%;
+	}
+}

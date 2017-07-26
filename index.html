@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Proyecto Final</title>
+	<meta name="viewport" content="width=device-width">
+	<link href="https://file.myfontastic.com/BuVjRc5HPhZp6rAktbsgnE/icons.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+	<header class="main-header">
+		<div class="l-container">
+			<a href="#"> <img src="img/logo.png" alt="" class="logo"></a>
+			<div id="toggle-menu" class="icon-menu"></div>
+			<nav class="main-nav" id="main-nav">
+				<div class="close" id="close" ><a href="#" class="icon-close" id="btn_cerrar"></a></div>
+				<ul class="main-menu">
+					<li class="main-menu__item">
+						<a href="#" class="main-menu__link">Inicio</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#" class="main-menu__link">El staff</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#" class="main-menu__link">Servicios</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#" class="main-menu__link">Promociones</a>
+					</li>
+					<li class="main-menu__item">
+						<a href="#contacto" class="main-menu__link">Contacto</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="banner">
+		<img src="img/banner.jpg" alt="" class="banner__img">
+		<div class="banner__copy">
+			<h1 class="banner__copy__title">Tu belleza y estilo en nuestras manos</h1>
+			<p class="banner__copy__content">Profesionales a tu servicio</p>
+			<a href="#" class="banner__copy__button button primary">Conoce más</a>
+		</div>
+	</div>
+	<main>
+		<div class="services">
+			<div class="service">
+				<h3 class="service__title">Cabello</h3>
+			</div>
+			<div class="service">
+				<h3 class="service__title">Manos y pies</h3>
+			</div>
+			<div class="service">
+				<h3 class="service__title">Cuidado de la piel</h3>
+			</div>
+		</div>
+
+		<div class="staff-container l-container">
+			<h1 class="staff-title">Staff</h1>
+			<div class="staff-member">
+				<img src="img/staff-1.jpg" alt="" class="staff-member__img">
+				<h3 class="staff-member__name">Laura</h3>
+				<a href="#" class="staff-member__button button third">Pedir cita</a>
+			</div>
+
+			<div class="staff-member">
+				<img src="img/staff-1.jpg" alt="" class="staff-member__img">
+				<h3 class="staff-member__name">Carmen</h3>
+				<a href="#" class="staff-member__button button third">Pedir cita</a>
+			</div>
+
+			<div class="staff-member">
+				<img src="img/staff-1.jpg" alt="" class="staff-member__img">
+				<h3 class="staff-member__name">Mario</h3>
+				<a href="#" class="staff-member__button button third">Pedir cita</a>
+			</div>
+
+			<div class="staff-member">
+				<img src="img/staff-1.jpg" alt="" class="staff-member__img">
+				<h3 class="staff-member__name">Sandra</h3>
+				<a href="#" class="staff-member__button button third">Pedir cita</a>
+			</div>
+		</div>	
+
+		<div class="contact l-container" id="contacto">
+			<div class="contact-data">
+				<h2 class="subtitle">Visítanos</h2>
+				<div class="contact-map">
+					<iframe src="https://mapsengine.google.com/map/u/1/embed?mid=zsZIblwzQkgQ.kpgXK0OogEI0&z=16" 
+					 width="100%" height="350"></iframe>
+				</div>
+				<div class="contact-address icon-pin">Calle ABC, 123, Int. 201, México, D.F. </div>
+				<div class="contact-phone icon-phone">(55) 57349923</div>
+			</div>
+
+			<div class="contact-form-container">
+				<h2 class="subtitle">O escríbenos</h2>
+				<form action="contact.php" method="POST" class="contact-form">
+					<label for="name">Nombre</label>
+					<input type="text" name="name" id="name">
+					<label for="email">Correo</label>
+					<input type="email" name="email" id="email">
+					<label for="phone">Teléfono</label>
+					<input type="tel" name="phone" id="phone">
+					<label for="messagge">Mensaje</label>
+					<textarea rows="10" cols="30"></textarea>
+					<input type="submit" value="Enviar" class="button secundary">
+				</form>	
+			</div>
+		</div>
+	</main>
+
+	<footer class="main-footer">
+		<a href="http://facebook.com" class="social-icon icon-facebook"></a>
+		<a href="http://twitter.com" class="social-icon icon-twitter"></a>
+		<a href="http://youtube.com" class="social-icon icon-youtube"></a>
+	</footer>
+
+</body>
+</html>
